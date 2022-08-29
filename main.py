@@ -165,7 +165,7 @@ if __name__ == '__main__':
     parser.add_argument('--data_dir', default='/ssd1/greg/NIH_CXR/images', type=str)
     parser.add_argument('--label_dir', default='labels/', type=str)
     parser.add_argument('--out_dir', default='results/', type=str, help="path to directory where results and model weights will be saved")
-    parser.add_argument('--dataset', required=True, type=str, choices=['nih-lt', 'mimic-lt'])
+    parser.add_argument('--dataset', required=True, type=str, choices=['nih-lt', 'mimic-cxr-lt'])
     parser.add_argument('--loss', default='ce', type=str, choices=['ce', 'focal', 'ldam'])
     parser.add_argument('--drw', action='store_true', default=False)
     parser.add_argument('--rw_method', default='', choices=['', 'sklearn', 'cb'])
