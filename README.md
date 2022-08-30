@@ -42,3 +42,31 @@ All trained model weights are available below. In the following table, best resu
 
 ## Usage
 
+To reproduce the results presented in this paper...
+1. Register to download the MIMIC-CXR dataset from https://physionet.org/content/mimic-cxr/2.0.0/, and download the NIH ChestXRay14 dataset from https://nihcc.app.box.com/v/ChestXray-NIHCC/.
+2. Install prerequisite packages with Anaconda: `conda env create -f lt_cxr.yml` and `conda activate lt_cxr`.
+3. Run all MIMIC-CXR-LT experiments: `bash run_mimic-cxr-lt_experiments.sh` (changing the `--data_dir` argument to your MIMIC-CXR path).
+4. Run all NIH-LT experiments: `bash run_nih-lt_experiments.sh` (changing the `--data_dir` argument to your NIH ChestXRay14 path).
+
+Labels for the MIMIC-CXR-LT benchmark presented in this paper can be found in the `labels/` directory. Labels for NIH-LT are readily available upon request; for access, please email Dr. Ronald Summers (rsummers@cc.nih.gov) and Greg Holste (gholste@utexas.edu). All experiments were conducted on a single NVIDIA RTX A6000 GPU.
+
+-----
+
+## Citation
+
+To be presented at [DALI 2022](https://dali-miccai.github.io/) and published in the MICCAI workshop proceedings. For now, if you found this work useful, please cite the arXiv version:
+
+```
+@article{holste2022long,
+  title = {Long-Tailed Classification of Thorax Diseases on Chest X-Ray: A New Benchmark Study},
+  author = {Holste, Gregory and Wang, Song and Jiang, Ziyu and Shen, Thomas C. and Shih, George and Summers, Ronald M. and Peng, Yifan and Wang, Zhangyang},
+  journal = {arXiv preprint arXiv:2208.13365},
+  year = {2022}
+}
+```
+
+-----
+
+## Contact
+
+Feel free to contact me (Greg Holste) at gholste@utexas.edu with any questions!
