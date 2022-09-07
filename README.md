@@ -1,6 +1,6 @@
 # LongTailCXR
 
-Code repository for [**"Long-Tailed Classification of Thorax Diseases on Chest X-Ray: A New Benchmark Study"**](https://arxiv.org/abs/2208.13365) by Gregory Holste, Song Wang, Ziyu Jiang, Tommy C. Shen, Ronald D. Summers, Yifan Peng, and Zhangyang Wang. To be presented at [DALI 2022](https://dali-miccai.github.io/), a MICCAI workshop.
+Code repository for [**"Long-Tailed Classification of Thorax Diseases on Chest X-Ray: A New Benchmark Study"**](https://arxiv.org/abs/2208.13365) by Gregory Holste, Song Wang, Ziyu Jiang, Thomas C. Shen, Ronald M. Summers, Yifan Peng, and Zhangyang Wang. To be presented at [DALI 2022](https://dali-miccai.github.io/), a MICCAI workshop.
 
 -----
 
