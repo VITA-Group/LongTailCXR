@@ -2,8 +2,6 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-from copy import deepcopy
-
 def get_loss(args, weights, train_dataset):
     if args.loss == 'ce':
         loss_fxn = torch.nn.CrossEntropyLoss(weight=weights, reduction='mean')

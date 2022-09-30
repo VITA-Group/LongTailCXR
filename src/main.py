@@ -1,17 +1,12 @@
 import os
 import shutil
-import time
 
 import argparse
-import cv2
 import numpy as np
 import pandas as pd
 import torch
-import torch.nn.functional as F
 import torchvision
-import tqdm
 
-from sklearn.metrics import accuracy_score, roc_auc_score, classification_report
 from sklearn.utils import class_weight
 
 from datasets import *
@@ -47,7 +42,7 @@ def main(args):
     set_seed(args.seed)
 
     # Create datasets + loaders
-    if args.dataset == 'nih-lt':
+    if args.dataset == 'nih-cxr-lt':
         dataset = NIH_CXR_Dataset
         N_CLASSES = 20
     else:

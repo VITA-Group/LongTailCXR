@@ -3,7 +3,7 @@
 echo "Training CE on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ce \
                      --max_epochs 60 \
                      --patience 15 \
@@ -13,7 +13,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training class-balanced CE on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ce \
                      --rw_method cb \
                      --max_epochs 60 \
@@ -24,7 +24,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training sklearn re-weighted CE on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ce \
                      --rw_method sklearn \
                      --max_epochs 60 \
@@ -35,7 +35,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training focal loss on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss focal \
                      --max_epochs 60 \
                      --patience 15 \
@@ -45,7 +45,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training class-balanced focal loss on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss focal \
                      --rw_method cb \
                      --max_epochs 60 \
@@ -56,7 +56,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training sklearn re-weighted focal loss on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss focal \
                      --rw_method sklearn \
                      --max_epochs 60 \
@@ -67,7 +67,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training LDAM loss on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ldam \
                      --max_epochs 60 \
                      --patience 15 \
@@ -77,7 +77,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training class-balanced LDAM loss on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ldam \
                      --rw_method cb \
                      --max_epochs 60 \
@@ -88,7 +88,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training class-balanced LDAM loss w/ DRW on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ldam \
                      --rw_method cb \
                      --drw \
@@ -100,7 +100,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training sklearn re-weighted LDAM loss on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ldam \
                      --rw_method sklearn \
                      --max_epochs 60 \
@@ -111,7 +111,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training sklearn re-weighted LDAM loss w/ DRW on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ldam \
                      --rw_method sklearn \
                      --drw \
@@ -123,7 +123,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training mixup on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ce \
                      --max_epochs 60 \
                      --patience 15 \
@@ -135,7 +135,7 @@ python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
 echo "Training balanced mixup on NIH-LT..."
 python src/main.py --data_dir /ssd1/greg/NIH_CXR/images \
                      --out_dir nih_results \
-                     --dataset nih-lt \
+                     --dataset nih-cxr-lt \
                      --loss ce \
                      --max_epochs 60 \
                      --patience 15 \

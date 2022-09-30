@@ -1,22 +1,17 @@
 import os
 import random
-import shutil
 
-import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import torch
-import torch.nn.functional as F
-import torchvision
 import tqdm
 
 from copy import deepcopy
 
 from mlxtend.plotting import plot_confusion_matrix
-from sklearn.metrics import roc_auc_score, balanced_accuracy_score, classification_report, confusion_matrix, matthews_corrcoef, ConfusionMatrixDisplay
+from sklearn.metrics import roc_auc_score, balanced_accuracy_score, classification_report, confusion_matrix, matthews_corrcoef
 from sklearn.preprocessing import LabelBinarizer
-from sklearn.utils import compute_class_weight
 
 def set_seed(seed):
     """Set all random seeds and settings for reproducibility (deterministic behavior)."""
