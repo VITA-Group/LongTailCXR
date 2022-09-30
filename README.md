@@ -1,8 +1,9 @@
-# LongTailCXR
+# Long-Tailed Classification of Thorax Diseases on Chest X-Ray: A New Benchmark Study
 
-Code repository for [**"Long-Tailed Classification of Thorax Diseases on Chest X-Ray: A New Benchmark Study"**](https://arxiv.org/abs/2208.13365) by Gregory Holste, Song Wang, Ziyu Jiang, Thomas C. Shen, Ronald M. Summers, Yifan Peng, and Zhangyang Wang. To be presented at [DALI 2022](https://dali-miccai.github.io/), a MICCAI workshop.
+### Gregory Holste, Song Wang, Ziyu Jiang, Thomas C. Shen, Ronald M. Summers, Yifan Peng, Zhangyang Wang
+### <b>[Oral Presentation]</b> MICCAI Workshop on Data Augmentation, Labelling, and Imperfections (DALI). 2022.
 
------
+[[Paper](https://link.springer.com/chapter/10.1007/978-3-031-17027-0_3)] | [[arXiv](https://arxiv.org/abs/2208.13365)] | [[Oral Presentation](https://drive.google.com/file/d/1IVylgwhPBs_HoaUQMvkX1R-7lXMANI7K/view?usp=sharing)]
 
 ## Abstract
 
@@ -38,28 +39,32 @@ All trained model weights are available below. In the following table, best resu
 
 -----
 
+## Data Access
+
+Labels for the MIMIC-CXR-LT dataset presented in this paper can be found in the `labels/` directory. Labels for NIH-CXR-LT can be found at https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/174256157515. For both datasets, there is one csv file for each data split ("train", "balanced-val", "test", and "balanced-test").
+
+-----
+
 ## Usage
 
 To reproduce the results presented in this paper...
 1. Register to download the MIMIC-CXR dataset from https://physionet.org/content/mimic-cxr/2.0.0/, and download the NIH ChestXRay14 dataset from https://nihcc.app.box.com/v/ChestXray-NIHCC/.
 2. Install prerequisite packages with Anaconda: `conda env create -f lt_cxr.yml` and `conda activate lt_cxr`.
-3. Run all MIMIC-CXR-LT experiments: `bash run_mimic-cxr-lt_experiments.sh` (changing the `--data_dir` argument to your MIMIC-CXR path).
-4. Run all NIH-LT experiments: `bash run_nih-cxr-lt_experiments.sh` (changing the `--data_dir` argument to your NIH ChestXRay14 path).
-
-Labels for the MIMIC-CXR-LT benchmark presented in this paper can be found in the `labels/` directory. Labels for NIH-LT are readily available upon request; for access, please email Dr. Ronald Summers (rsummers@cc.nih.gov) and Greg Holste (gholste@utexas.edu). All experiments were conducted on a single NVIDIA RTX A6000 GPU.
+3. Run all MIMIC-CXR-LT experiments: `bash run_mimic-cxr-lt_experiments.sh` (first changing the `--data_dir` argument to your MIMIC-CXR path).
+4. Run all NIH-CXR-LT experiments: `bash run_nih-cxr-lt_experiments.sh` (first changing the `--data_dir` argument to your NIH ChestXRay14 path).
 
 -----
 
 ## Citation
 
-To be presented at [DALI 2022](https://dali-miccai.github.io/) and published in the MICCAI workshop proceedings. For now, if you found this work useful, please cite the arXiv version:
-
 ```
-@article{holste2022long,
-  title = {Long-Tailed Classification of Thorax Diseases on Chest X-Ray: A New Benchmark Study},
-  author = {Holste, Gregory and Wang, Song and Jiang, Ziyu and Shen, Thomas C. and Shih, George and Summers, Ronald M. and Peng, Yifan and Wang, Zhangyang},
-  journal = {arXiv preprint arXiv:2208.13365},
-  year = {2022}
+@inproceedings{holste2022long,
+  title={Long-Tailed Classification of Thorax Diseases on Chest X-Ray: A New Benchmark Study},
+  author={Holste, Gregory and Wang, Song and Jiang, Ziyu and Shen, Thomas C and Shih, George and Summers, Ronald M and Peng, Yifan and Wang, Zhangyang},
+  booktitle={MICCAI Workshop on Data Augmentation, Labelling, and Imperfections},
+  pages={22--32},
+  year={2022},
+  organization={Springer}
 }
 ```
 
