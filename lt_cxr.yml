@@ -1,4 +1,4 @@
-name: nih_lt
+name: lt_cxr
 channels:
   - pytorch
   - conda-forge
@@ -114,4 +114,4 @@ dependencies:
     - toml==0.10.2
     - tomli==1.2.3
     - virtualenv==20.13.1
-prefix: /home/greg/anaconda3/envs/nih_lt
+prefix: /home/greg/anaconda3/envs/lt_cxr
