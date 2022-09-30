@@ -1,7 +1,7 @@
 # Long-Tailed Classification of Thorax Diseases on Chest X-Ray: A New Benchmark Study
 
-### Gregory Holste, Song Wang, Ziyu Jiang, Thomas C. Shen, Ronald M. Summers, Yifan Peng, Zhangyang Wang
-### <b>[Oral Presentation]</b> MICCAI Workshop on Data Augmentation, Labelling, and Imperfections (DALI). 2022.
+Gregory Holste, Song Wang, Ziyu Jiang, Thomas C. Shen, Ronald M. Summers, Yifan Peng, Zhangyang Wang<br>
+**[Oral Presentation]** MICCAI Workshop on Data Augmentation, Labelling, and Imperfections (DALI). 2022.
 
 [[Paper](https://link.springer.com/chapter/10.1007/978-3-031-17027-0_3)] | [[arXiv](https://arxiv.org/abs/2208.13365)] | [[Oral Presentation](https://drive.google.com/file/d/1IVylgwhPBs_HoaUQMvkX1R-7lXMANI7K/view?usp=sharing)]
 
@@ -41,7 +41,7 @@ All trained model weights are available below. In the following table, best resu
 
 ## Data Access
 
-Labels for the MIMIC-CXR-LT dataset presented in this paper can be found in the `labels/` directory. Labels for NIH-CXR-LT can be found at https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/174256157515. For both datasets, there is one csv file for each data split ("train", "balanced-val", "test", and "balanced-test").
+Labels for the **MIMIC-CXR-LT** dataset presented in this paper can be found in the `labels/` directory. Labels for **NIH-CXR-LT** can be found at https://nihcc.app.box.com/v/ChestXray-NIHCC/folder/174256157515. For both datasets, there is one csv file for each data split ("train", "balanced-val", "test", and "balanced-test").
 
 -----
 
